@@ -1,0 +1,26 @@
+POST http://localhost:3333/gallery
+Content-Type: application/json
+
+{
+    "title": "Image #1",
+    "description": "This is the first image.",
+    "url": "https://imgur.com/gallery/chocolate-gtDaxCE"
+}
+
+###
+
+GET http://localhost:3333/gallery?search=ima
+
+###
+PUT http://localhost:3333/gallery/b2ac7ab6-6816-4188-ab4d-d4cc0eae890e
+Content-Type: application/json
+
+{
+    "title": "Image #2",
+    "description": "This is the first image.",
+    "url": "https://imgur.com/gallery/chocolate-gtDaxCE"
+}
+
+###
+
+DELETE http://localhost:3333/gallery/b2ac7ab6-6816-4188-ab4d-d4cc0eae890e
